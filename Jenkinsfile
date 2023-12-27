@@ -13,7 +13,7 @@ pipeline {
 	}			
 	 stage('Build the code') {
            steps {
-	    sh script: '/opt/homebrew/bin/mvn clean package'
+	    sh script: 'mvn clean package'
            }
         }	
         stage('Reporting and Archiving') {
